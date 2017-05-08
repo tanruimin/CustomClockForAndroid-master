@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:custom="http://schemas.android.com/apk/res-auto"
+    >
+
+    <com.example.administrator.timeviewdemo.TimeView
+        android:visibility="gone"
+        android:id="@+id/time_view"
+        android:layout_width="400dp"
+        android:layout_height="400dp"
+        android:layout_gravity="center_horizontal"
+        custom:secondPointerColor="#f00"
+        android:background="#05ff0000"
+        custom:maxScaleColor="#000"
+        custom:minScaleColor="#000"
+        custom:midScaleColor="#000"
+        custom:maxScaleLength="14dp"
+        custom:midScaleLength="10dp"
+        custom:minScaleLength="6dp"
+        custom:centerPointRadiu="2dp"
+        custom:centerPointType="rect"
+        custom:centerPointColor="#000"
+        custom:secondPointerLength="80dp"
+        custom:minPointerLength="50dp"
+        custom:hourPointerLength="30dp"
+        custom:minPointerColor="#000"
+        custom:hourPointerColor="#000"
+
+        custom:textColor="#f00"
+        custom:textSize="24sp"
+        android:layout_centerVertical="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+    <Button
+        android:visibility="gone"
+        android:id="@+id/button"
+        android:layout_width="80dp"
+        android:layout_height="30dp"
+        android:text="df"
+        android:textSize="25sp"
+        android:background="#05ff0000"
+        android:layout_marginBottom="130dp"
+        android:layout_alignBottom="@+id/time_view"
+        android:layout_centerHorizontal="true" />
+    <com.example.administrator.view.yuanf
+        android:visibility="gone"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/yf"
+        android:layout_centerInParent="true"/>
+    <com.example.administrator.view.Taiji
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/taiji"
+        />
+</RelativeLayout>
